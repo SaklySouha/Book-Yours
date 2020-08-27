@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book yours - page reservation</title>
+    <link rel="stylesheet" href="style reserve.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a id="color-nav" class="nav-link" href="#hotel">ROOM RESERVATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="color-nav" class="nav-link" href="#resto">RESTAURANT RESERVATION</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="index.html"><img src="image/logo.png" width="267" height="221" ></img></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+              <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="color-nav" class="nav-link" href="#">MY ACCOUNT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="color-nav" class="nav-link" href="#">LOG OUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="color-nav-user" class="nav-link" href="#">HI USER</a>
+                    </li>
+                </ul>
+            </div>
+             
+            </div>
+          </nav>
+
+    </section>
+
+  
+  <section id="hotel">
+    <div class="row-hotel">
+        <section class="resto">
+            <div id="rss"></div>
+            <h1 id="titre">Room reservation</h1>
+            <div id="rec"></div>
+        </section>  
+            <div class="container-room">
+                <div>
+                    <select class="select-hotel">
+                      <option value="0" ><b>CHOOSE THE HOTEL</b></option>
+                      <option value="1">Name hotel 1</option>
+                      <option value="2">Name hotel 2</option>
+                      <option value="3">Name hotel 3</option>
+                      <option value="4">Name hotel 3</option>
+                    
+                    </select>
+                 </div>
+
+            <div class="row">
+                <div class="col">
+                    <input class="input-custum" type="text" placeholder="ARRIVAL">
+                </div>
+                <div class="col">
+                    <input class="input-custum" type="text" placeholder="LEAVING">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h2><b class="room">Room :</b></h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                       
+                    <table cellspacing="0" cellpadding="0">
+                        
+                            <tr>
+                            <td rowspan="4">
+                                <b class="title-checkbox-custum">Number of persons :</b>
+                            </td>
+                            <td>
+                                <input type="radio" id="radio01" name="radio" />
+                                <label for="radio01"><span></span>1 Person</label>
+
+                            </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <input type="radio" id="radio02" name="radio" />
+                                    <label for="radio02"><span></span>2 Person</label>
+    
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="radio03" name="radio" />
+                                    <label for="radio03"><span></span>3 Person</label>
+    
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="radio04" name="radio" />
+                                    <label for="radio04"><span></span>4 Person</label>
+    
+
+                                </td>
+                            </tr>
+
+                            
+                    </table>
+                </div>
+
+                <div class="col">
+                       
+                    <table cellspacing="0" cellpadding="0">
+                        
+                            <tr>
+                            <td rowspan="3">
+                                <b class="title-checkbox-custum">View :</b>
+                            </td>
+                            <td>
+                                <input type="radio" id="radio05" name="view" />
+                                <label for="radio05"><span></span>Sea view</label>
+
+                                
+                            </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <input type="radio" id="radio06" name="view" />
+                                    <label for="radio06"><span></span>Pool view</label>
+
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <input type="radio" id="radio07" name="view" />
+                                    <label for="radio07" ><span></span>Terrace view</label>
+                                    
+                                </td>
+                            </tr>
+                         
+
+                            
+                    </table>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <h2><b class="room">Payment :</b></h2>
+            </div>
+
+            <div id="payment-row" class="row"  >
+
+                <div class="col">
+                       
+                    <table cellspacing="0" cellpadding="0">
+                        
+                            <tr>
+                            <td>
+                               
+
+                                <input type="radio" id="radio08" name="type" />
+                                <label for="radio08" ><span></span>Online</label>
+                                
+                            </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <input class="input-custum-code" type="text" placeholder="CODE">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input-custum-code" type="text" placeholder="CODE">
+                               </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input-custum-code" type="text" placeholder="CODE"> 
+                               </td>
+                            </tr>
+
+                            
+                    </table>
+                </div>
+
+                <div class="col">
+                       
+                    <table cellspacing="0" cellpadding="0">
+                        
+                           
+                            <tr>
+                                <td>
+                                    
+
+                                    <input type="radio" id="radio09" name="type" />
+                                    <label for="radio09" ><span></span>At the reception</label>
+                                   
+                                </td>
+                            </tr>
+                            
+                    </table>
+                </div>
+                
+            </div>
+
+               
+
+
+
+            <button id="btn">Reserve !</button>
+
+
+
+
+
+
+            </div>         
+           
+    </div>
+    
+  </section>
+    
+
+  <section id="resto">
+    <div class="row-resto">
+        <section class="hotel">
+            <div id="rss"></div>
+            <h1 id="titre">Restaurant reservation</h1>
+            <div id="rec"></div>
+            
+        </section>    
+
+        <div class="container-resto">
+        <div class="row">
+            <div class="col">
+                <select class="select-resto">
+                    <option value="0" ><b>HOTEL NAME</b></option>
+                    <option value="1">Name hotel 1</option>
+                    <option value="2">Name hotel 2</option>
+                    <option value="3">Name hotel 3</option>
+                    <option value="4">Name hotel 3</option>
+                </select>     
+           </div>
+            <div class="col">
+                <select class="select-resto">
+                    <option value="0" ><b> RESTAURANT NAME</b></option>
+                    <option value="1">Name resto 1</option>
+                    <option value="2">Name resto 2</option>
+                    <option value="3">Name resto 3</option>
+                    <option value="4">Name resto 3</option>
+                 </select>   
+             </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <select class="select-resto">
+                    <option value="0" ><b>DAY</b></option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="2">Friday</option>
+                    <option value="3">Saturday</option>
+                    <option value="4">Sunday</option>
+                </select>  
+                <select class="select-resto">
+                    <option value="0" ><b>NUMBER OF PERSONS</b></option>
+                    <option value="1">2</option>
+                    <option value="2">4</option>
+                    <option value="3">6</option>
+                </select>     
+           </div>
+            <div class="col" >
+                <input class="input-custum" type="time" id="appt" name="appt"
+                min="07:00" max="02:00" placeholder="TIME">
+                <div class="time-text-resto">
+                <p class="resto-time">Breakfast: From 7 a.m. to 11 a.m.</p>
+                <p class="resto-time">   Lunch: 12 p.m. to 3 p.m.</p>
+                <p class="resto-time">   Dinner: 6 p.m. to 11 p.m.</p>
+                <p class="resto-time">   Time: From 7 a.m. to 2 a.m.</p>
+                </div>
+            </div>
+        </div>
+      
+
+
+        <div class="row">
+
+            <div class="col">
+                   
+                <table cellspacing="0" cellpadding="0">
+                    
+                        <tr>
+                        <td rowspan="2">
+                            <b class="title-checkbox-custum">Who are you :</b>
+                        </td>
+                        <td>
+
+                            <input type="radio" id="radio010" name="person type" />
+                            <label for="radio010" ><span></span>Traveler</label>
+
+                        </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                            
+
+                                <input type="radio" id="radio011" name="person type" />
+                                <label for="radio011" ><span></span>Hotel resident</label>
+
+                            </td>
+                        </tr>
+                        
+                </table>
+            </div>
+
+            <div class="col">
+                   
+                <input class="input-custum" type="text" placeholder="ROOM NUMBER">
+
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <h2><b class="room">Choose your table:</b></h2>
+        </div>
+
+      <div class="row">
+<img src="image/tables.png" width="790" height="812" >
+      </div>
+
+      <div class="row">
+        <div class="col">
+            <select class="select-resto">
+                <option value="0" ><b>ZONE</b></option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+            </select>  
+            <select class="select-resto">
+                <option value="0" ><b>NUMBER TABLE</b></option>
+                <option value="1">A-1</option>
+                <option value="2">A-2</option>
+                <option value="3">A-3</option>
+            </select>     
+       </div>
+    </div>
+
+           
+
+
+
+        <button id="btn">Reserve !</button>
+
+
+
+
+
+
+        </div>    
+
+           
+    </div>
+   
+  </section>
+
+  <section id="bas-de-page">
+  <footer id="footer">
+      <img class="logo-footer" src="image/logo.png" width="165" height="133">
+      <div class="footer-links" >
+            <a href="#hotel">OUR HOTELS</a>
+            <a href="#resto">OUR RESTAURANTS</a>
+      </div>
+     
+
+
+  </footer>
+</section>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>    
+</body>
+</html>

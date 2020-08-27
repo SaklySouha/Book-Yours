@@ -1,0 +1,267 @@
+@font-face {
+    font-family: Memory;
+    src: url(font/Memories.ttf);
+    font-style: normal;
+    font-weight: 100;
+  }
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("image/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.nav-item{
+    background-color:transparent;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#color-nav{
+    color: #606060;
+  }
+
+  #color-nav:hover{
+    color: #424242;
+    border:solid 2px #ed1e79;
+  }
+
+  #color-nav:active{
+    color: #424242;
+    border:solid 2px #ed1e79;
+  }
+
+h1{
+    font-family: "Palatino Linotype"; 
+}
+  .container{
+      background-color: white;
+      padding: 30px;
+      border-top-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      width:450px;
+      margin-top: 100px;
+  }
+  .container2{
+  float: right;
+  margin-right: 110px;
+}
+  
+#btn{
+    font-size: 16px;
+    color:white;
+    background-color: #ed1e79;
+    border-radius: 12px;
+    padding: 5px 15px;
+    border: none;
+}
+
+#btn:hover{
+    font-size: 16px;
+    color:white;
+    background-color: #d11466;
+    border-radius: 12px;
+    padding: 5px 15px;
+    border: none;
+}
+
+.container-hotel{
+        border:3px solid #ed1e79;
+        border-top-right-radius: 25px;
+        margin-top: 100px;
+        margin: 5% 19%;
+   
+}
+.available-hotel{
+    background-color: #ed1e79;
+    color: white;
+    padding: 30px;
+}
+.text{
+    border-left: 2px solid white;
+    padding: 10px;
+
+}
+.titre-hotel{
+    padding: 15px;
+    text-align: center;
+    font-family: "Palatino Linotype"; 
+
+}
+#rectangle{
+    margin-left: -47px;
+    margin-top: -3px;
+    content: '';
+    height: 21px;
+    width: 230px;
+    background-color: #ed1e79;
+    z-index: 1;
+    position: absolute;
+}
+.row-resto{
+    margin-top: -51px;
+}
+.container-resto{
+    border:3px solid #ed1e79;
+    border-top-left-radius: 25px;
+    margin-top: 100px;
+    margin: 5% 19%;
+
+}
+.available-resto{
+background-color: #ed1e79;
+color: white;
+padding: 30px;
+}
+.text{
+border-left: 2px solid white;
+padding: 10px;
+
+}
+.titre-resto{
+padding: 15px;
+text-align: center;
+font-family: "Palatino Linotype"; 
+
+}
+#rectangle2{
+    margin-left: 187px;
+    margin-top: -6px;
+    content: '';
+    height: 21px;
+    width: 230px;
+    background-color: #ed1e79;
+    z-index: 1;
+    position: absolute;
+}
+.titre-H{
+    font-size:larger;
+}
+.contact{
+    text-align: center;
+    font-family:Memory;
+    font-size: 63px;
+    margin-top: 32px;
+}
+.bar-contact{
+    margin-left: 45%;
+    margin-top: 3%;
+}
+
+.hotel{
+    margin-top: 60px;
+    margin-left: 35%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+#rec{
+    FONT-VARIANT-EAST-ASIAN: JIS83;
+    z-index: 1;
+    margin-left: -159px;
+    content: '';
+    margin-top: 102px;
+    width: 10.5em;
+    height: 0.8em;
+    background-color: #ed1e79;
+}
+
+#rss {
+    width: 14em;
+    height: 8em;
+    border-radius: 60px 0px 0px 0px;
+    background-color: #ed1e79;
+    font-size: 14px;
+}
+  
+#rss:before {
+    content: '';
+    display: block;
+    height: 30em;
+    width: 50em;
+    background: #f2f2f2;
+    border-radius: 53px 0px 0px 0px;
+    position: relative;
+    top: 1em;
+    left: 1em;
+  }
+#titre{
+    margin-top: 25px;
+    z-index: 1;
+    margin-left: -160px;
+    font-size:60px;
+}
+#bas-de-page{
+    background-color:#fcdbec;
+
+}
+
+#bottom{
+    position: absolute;
+    top: 454%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+}
+#bottom2{
+    position: absolute;
+    top: 483%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+}
+#col-bottom{
+    margin-left: -81%;
+    margin-right: 23%;
+}
+#col-bottom2{
+    margin-left: -88%;
+    margin-right: 32%;
+}
+
+.text-contact{
+    font-family: "Palatino Linotype"; 
+    font-size: 20px;
+
+}
+
+#footer{
+    border-top:2px solid #ed1e79;
+    margin: -2% 5%;
+
+}
+.footer-links a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .footer-links a:hover {
+    color: #ed1e79;
+    text-decoration: none;
+  }
+  .footer-links a:active {
+    color: #ed1e79;
+    text-decoration: none;
+  }
+  .footer-links {
+    float: right;
+    padding-top: 36px;
+  }
+  
+.logo-footer{
+    padding: 10px;
+}
+
+
+
